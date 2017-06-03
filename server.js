@@ -30,10 +30,10 @@ app.set('view engine', 'handlebars');
 
 
 if(process.env.NODE_ENV == 'production') {
-	mongoose.connect("mongodb://herokuXXXXXXX")
+	mongoose.connect("mongodb://heroku_38180hrz:9ec502bjprfdep369ptfohunn3@ds163181.mlab.com:63181/heroku_38180hrz");
 }
 else{
-	mongoose.connect('mongodb://localhost/scraper');
+	mongoose.connect('mongodb://localhost/scrapeonion');
 }
 var db = mongoose.connection;
 
